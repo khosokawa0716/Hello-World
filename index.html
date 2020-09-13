@@ -7,15 +7,17 @@
 </head>
 <body>
     <div id="app">
-        {{ message }}
+        {{ message + total_count }}
     </div>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 <script>
     var app = new Vue({
         el: '#app',
         data: {
-            message: 'Hello Vue!'
+            message: 'Hello Vue!',
+            total_count: 7
         }
     })
 </script>
